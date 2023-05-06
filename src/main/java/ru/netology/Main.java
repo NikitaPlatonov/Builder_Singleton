@@ -1,5 +1,10 @@
-package ru.netology;public class Main {
+package ru.netology;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        PersonBuilder personBuilder = new PersonBuilder();
+        Person mom = personBuilder.setName("mom").setSurName("surNameMom").setCity("Moscow").build();
+        Person son = mom.newChildBuilder().setName("Nikita").build();
+        System.out.println(son.toString());
     }
 }

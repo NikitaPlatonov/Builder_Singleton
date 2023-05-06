@@ -62,6 +62,9 @@ public class Person {
     public String getCity() {
         return city;
     }
+    public PersonBuilder newChildBuilder() {
+        return new PersonBuilder().setSurName(this.getSurName()).setAge(0).setCity(this.getCity());
+    }
 
     @Override
     public String toString() {
