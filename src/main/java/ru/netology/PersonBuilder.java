@@ -43,7 +43,6 @@ public class PersonBuilder {
         if(countCallMethodSetAge == 0) {
             age = -1;
         }
-        countCallMethodSetAge = 0;
         return new Person(name,surName,age,city);
     }
 }

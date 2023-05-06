@@ -74,7 +74,7 @@ public class Person {
 
     @Override
     public String toString() {
-        String ageString = age > 0 ? String.valueOf(age) : "неизвестен";
+        String ageString = age >= 0 ? String.valueOf(age) : "неизвестен";
         return "{ Person: " + "\n" +
         "Имя: " + getName() + "\n" +
         "Фамилия: " + getSurName() + "\n" +
