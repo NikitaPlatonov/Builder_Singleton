@@ -11,8 +11,14 @@ public class Person {
     public Person(String name, String surName) {
         this.name = name;
         this.surName = surName;
-        age = -1;
         city = null;
+        age = -1;
+    }
+    public Person(String name, String surName, String city) {
+        this.name = name;
+        this.surName = surName;
+        this.city = city;
+        age = -1;
     }
     public Person(String name, String surName, int age) {
         this.name = name;
