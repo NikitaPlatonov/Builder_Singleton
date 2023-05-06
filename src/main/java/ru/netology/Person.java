@@ -66,7 +66,7 @@ public class Person {
     }
 
     public String getCity() {
-        return city;
+        return Objects.requireNonNullElse(city, "неизвестен");
     }
     public PersonBuilder newChildBuilder() {
         return new PersonBuilder().setSurName(this.getSurName()).setAge(0).setCity(this.getCity());
@@ -74,10 +74,11 @@ public class Person {
 
     @Override
     public String toString() {
+        String ageString = age > 0 ? String.valueOf(age) : "неизвестен";
         return "{ Person: " + "\n" +
         "Имя: " + getName() + "\n" +
         "Фамилия: " + getSurName() + "\n" +
-        "Возраст: " + getAge() + "\n" +
+        "Возраст: " + ageString + "\n" +
         "Город проживания: " + getCity() + " }";
     }
 }
