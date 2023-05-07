@@ -21,6 +21,7 @@ public class Filter {
                 logger.log("Число " + num + " не проходит");
             }
         }
+        logger.log("Прошло " + result.size() + " элементов");
         logger.log("Результат фильтрации: ");
         return result;
     }

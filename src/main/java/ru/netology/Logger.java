@@ -28,6 +28,6 @@ public class Logger {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         // дату парсим в строку
         String formattedDateTime = now.format(formatter);
-        System.out.println("[" + formattedDateTime + " " + num++ + "]");
+        System.out.println("[" + formattedDateTime + " " + num++ + "]" +  " " + msg);
     }
 }
