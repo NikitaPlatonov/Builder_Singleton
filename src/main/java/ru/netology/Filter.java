@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Filter {
-    private int threshold;
+    private final int threshold;
 
     public Filter(int threshold) {
         this.threshold = threshold;
     }
+
     public List<Integer> filterOut(List<Integer> source) {
         Logger logger = Logger.getInstance();
         logger.log("Запускаем фильтрацию");
