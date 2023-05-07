@@ -31,7 +31,7 @@ public class Main {
         Filter filter = new Filter(numberFilter);
         List<Integer> output = filter.filterOut(randomList);
         for(int num : output) {
-            System.out.println(output + " ");
+            System.out.print(num + " ");
         }
         System.out.println("\n");
         logger.log("Завершаю работу программы");
